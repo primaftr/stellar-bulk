@@ -1,35 +1,46 @@
-# Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui) and TypeScript
+<p align="center">
+Stellar Bulk
+</p>
 
-This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app with TypeScript.
+<p align="center">
+    <img src="https://img.shields.io/badge/version-1.0.0-yellowgreen" alt="version 1.0.0"/>
+    <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="license MIT"/>
+</p>
 
-Next.js and chakra-ui have built-in TypeScript declarations, so we'll get autocompletion for their modules straight away.
+> An app to merge multiple stellar account in batch
 
-We are connecting the Next.js `_app.js` with `chakra-ui`'s Provider and theme so the pages can have app-wide dark/light mode. We are also creating some components which shows the usage of `chakra-ui`'s style props.
+## Built With
 
-## Deploy your own
+This website is built with <span style="color: #8b0000;">&hearts;</span> on [NextJS](https://nextjs.org/), statically typed in [TypeScript](https://www.typescriptlang.org/)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-chakra-ui)
+## Installation 🔧
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-chakra-ui-typescript&project-name=with-chakra-ui&repository-name=with-chakra-ui)
+Install dependencies
 
-## How to use
-
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-chakra-ui with-chakra-ui-app
-# or
-yarn create next-app --example with-chakra-ui with-chakra-ui-app
-# or
-pnpm create next-app --example with-chakra-ui with-chakra-ui-app
+```
+$ yarn
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Building
 
-## Notes
+```
+$ yarn build
+```
 
-Chakra has supported Gradients and RTL in `v1.1`. To utilize RTL, [add RTL direction and swap](https://chakra-ui.com/docs/features/rtl-support).
+## Running Server 🚀
 
-If you don't have multi-direction app, you should make `<Html lang="ar" dir="rtl">` inside `_document.ts`.
+Start the development server
+
+```
+$ yarn dev
+```
+
+Start the server
+
+```
+$ yarn start
+```
+
+## License 📜
+
+`Stellar Bulk` is available under the MIT license. See the LICENSE file for more info.
