@@ -17,7 +17,11 @@ interface InputFieldProps {
 
 export const InputField: React.FC<InputFieldProps> &
   FieldHookConfig<string> = ({ textarea, ...props }) => {
-  let C = Textarea;
+  let C = Input;
+  if (textarea) {
+    C = Textarea as any;
+  }
+
   const [field, { error }] = useField(props);
   return (
     <FormControl isInvalid={!!error}>
