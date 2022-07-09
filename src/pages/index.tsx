@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
 import { Formik } from "formik";
 import { useEffect, useState } from "react";
 import { RadioField as Raddio } from "../components/Radio";
@@ -68,12 +68,7 @@ const Index = () => {
     <>
       <Container minH={"100vh"}>
         <Flex minH="100vh">
-          <Flex
-            direction={"column"}
-            my="auto"
-            // mt={"50%"}
-            // transform="translate(calc(50vw - 50%), calc(50vh - 50%))"
-          >
+          <Flex direction={"column"} my="auto">
             <Hero title="Stellar Bulk" />
             <Formik
               initialValues={{
@@ -92,7 +87,7 @@ const Index = () => {
             >
               {(props) => (
                 <form onSubmit={props.handleSubmit}>
-                  <Flex direction={"column"} ml={2} mt={5}>
+                  <Flex direction={"column"} my={"auto"} mt={5}>
                     <Box ml={"auto"} my={2}>
                       <Button
                         colorScheme={"green"}
@@ -111,18 +106,7 @@ const Index = () => {
                       type={"text"}
                       placeholder="Destination address"
                     />
-                    <Flex
-                      maxW={"3xl"}
-                      minW="3xl"
-                      mt={2}
-                      // p={1}
-                      justifyContent="center"
-                      alignContent={"center"}
-                      justifyItems="center"
-                      justifySelf={"center"}
-                      alignItems="center"
-                      alignSelf={"center"}
-                    >
+                    <Flex maxW={"3xl"} minW={{ md: "xl", base: "md" }} mt={2}>
                       <InputField
                         textarea
                         name="privKeys"
